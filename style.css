@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: #0a0f1e;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.control-panel {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background: rgba(10, 20, 35, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 60px;
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+  z-index: 100;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+button {
+  background: #1a2a4a;
+  border: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 44px;
+  height: 44px;
+  border-radius: 44px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.92);
+  background: #3a6ea5;
+}
+
+.info-badge {
+  background: rgba(0,0,0,0.6);
+  border-radius: 44px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.info-badge span {
+  color: #ffd966;
+  font-size: 20px;
+}
+
+.mode-indicator {
+  background: #2a5a7a;
+  padding: 8px 14px;
+  border-radius: 44px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+.toast-msg {
+  position: fixed;
+  bottom: 80px;
+  right: 12px;
+  background: #000000bb;
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 40px;
+  font-size: 11px;
+  color: white;
+  z-index: 101;
+  pointer-events: none;
+}
