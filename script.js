@@ -3,7 +3,7 @@
   const ctx = canvas.getContext('2d');
   let particles = [];
   
-  const MAX_PARTICLES = 280;
+  const MAX_PARTICLES = 1000;
   const BASE_RADIUS = 4.2;
   const CONNECTION_DIST = 100;
   const MAX_SPEED = 1.1;
